@@ -1,0 +1,10 @@
+release/citysql.o
+release/main.o
+release/mainwindow.o
+release/page_logan.o
+release/page_logan1.o
+release/qrc_res.o
+release/moc_citysql.o
+release/moc_mainwindow.o
+release/moc_page_logan.o
+release/moc_page_logan1.o

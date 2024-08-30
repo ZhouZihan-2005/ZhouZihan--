@@ -1,0 +1,10 @@
+debug/citysql.o
+debug/main.o
+debug/mainwindow.o
+debug/page_logan.o
+debug/page_logan1.o
+debug/qrc_res.o
+debug/moc_citysql.o
+debug/moc_mainwindow.o
+debug/moc_page_logan.o
+debug/moc_page_logan1.o
