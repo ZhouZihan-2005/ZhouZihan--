@@ -1,5 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include<QKeyEvent>
+#include<QFile>
+#include <QCoreApplication>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -16,7 +19,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->treeWidget->clear();
     ui->treeWidget->setColumnCount(1);
     QStringList l;
-    l<<"用户信息管理系统";
+    l<<"信息管理系统";
     QTreeWidgetItem *pf = new QTreeWidgetItem(ui->treeWidget,l);
     ui->treeWidget->addTopLevelItem(pf);
     l.clear();
@@ -35,3 +38,22 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::keyPressEvent(QKeyEvent *event)
+{
+    if(event->key() ==Qt::Key_F6)
+    {
+        QFile f;
+        auto str = QCoreApplication::applicationDirPath();
+        f.setFileName(str+"//"+"cityqss.css");
+        f.open(QIODevice::ReadOnly);
+        QString strQss = f.readAll();
+        this->setStyleSheet(strQss);
+        m_dlgLogin.setStyleSheet(strQss);
+    }
+}
+void MainWindow::on_pushButton_clicked()
+{
+    exit(0);
+}
+

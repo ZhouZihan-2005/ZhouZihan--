@@ -30,7 +30,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="res.qrc">
-    <normaloff>:/C:/Users/strawberry/Desktop/icon.jpg</normaloff>:/C:/Users/strawberry/Desktop/icon.jpg</iconset>
+    <normaloff>:/11.jpg</normaloff>:/11.jpg</iconset>
   </property>
   <property name="toolTip">
    <string>这是登录界面</string>
@@ -50,7 +50,7 @@
       </font>
      </property>
      <property name="text">
-      <string>信息查询系统</string>
+      <string>信息管理系统</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -103,7 +103,7 @@
        </spacer>
       </item>
       <item row="0" column="1">
-       <widget class="QLabel" name="label">
+       <widget class="QLabel" name="lb1">
         <property name="font">
          <font>
           <pointsize>14</pointsize>
@@ -131,7 +131,7 @@
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QLabel" name="label_2">
+       <widget class="QLabel" name="lb2">
         <property name="font">
          <font>
           <pointsize>14</pointsize>
